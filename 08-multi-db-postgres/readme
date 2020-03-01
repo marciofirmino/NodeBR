@@ -1,0 +1,12 @@
+sudo docker run \
+--name adminer \
+-p 8080:8080 \
+--link my-postgres:my-postgres \
+-d \
+adminer
+
+
+sudo docker run -d -p 5432:5432 --name my-postgres -e POSTGRES_USER=erickwendel -e POSTGRES_PASSWORD=minhasenhasecreta -e POSTGRES_DB=heroes postgres
+
+mongo db userane = admin
+senha admin
