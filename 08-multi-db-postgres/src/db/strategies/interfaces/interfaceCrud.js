@@ -7,7 +7,7 @@ class ICrud {
   create(item) {
     throw new NotImplementedException();
   }
-  read(query) {
+  read(item) {
     throw new NotImplementedException();
   }
   update(id, item) {
@@ -16,9 +16,8 @@ class ICrud {
   delete(id) {
     throw new NotImplementedException();
   }
-  isConnected() {
+  isConnected(id) {
     throw new NotImplementedException();
   }
 }
-
-module.exportes = ICrud;
+module.exports = ICrud;
